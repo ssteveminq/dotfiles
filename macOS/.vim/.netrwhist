@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/junhyeok/.vim'
+let g:netrw_dirhist_2='/Users/junhyeok/.vim/plugged/ultisnips/autoload/UltiSnips'
+let g:netrw_dirhist_3='/Users/junhyeok/.vim'
+let g:netrw_dirhist_4='/Users/junhyeok/Repository/locomotion_package/ExternalSources'
+let g:netrw_dirhist_5='/Users/junhyeok/Repository/locomotion_package/ExternalSources/urdf'
+let g:netrw_dirhist_6='/Users/junhyeok/.vim'

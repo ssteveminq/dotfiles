@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/junhyeok/tro-2016/motion_editor/editor'
+let g:netrw_dirhist_2='/home/junhyeok/rss-2015/lib/pymanoid_lite'
+let g:netrw_dirhist_3='/home/junhyeok/locomotion_package/ControlSystem/Valkyrie/Valkyrie_Controller'
+let g:netrw_dirhist_4='/home/junhyeok/cddlib-094h/src'

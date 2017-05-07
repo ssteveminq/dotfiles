@@ -1,0 +1,13 @@
+Installation Document for Ubuntu
+- Gnome-terminal V3
+- Tmux Install
+    .bashrc copy
+    .tmux.conf copy
+- Vim Install (sudo apt-get install vim-nox)
+    .vimrc copy
+    vim-plug install
+    Ultisnip fix
+    clang_complete install
+- Gazebo
+- Ros
+- Bitbucket ssh

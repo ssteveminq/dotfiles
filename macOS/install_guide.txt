@@ -1,0 +1,8 @@
+Installation instruction
+
+- Tmux
+- Vim ( Brew Install )
+    Install vim-plug : https://github.com/junegunn/vim-plug
+    Install clang_complete : https://github.com/Rip-Rip/clang_complete/
+    Intall ctags-exuberant : brew install ctags-exuberant
+    .vim/plugged/vim-snippets/Ultisnips/cpp.snippets : pretty_print, saveVector add
