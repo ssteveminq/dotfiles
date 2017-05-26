@@ -108,10 +108,6 @@ let g:jedi#use_splits_not_buffers = "right"
 let python_highlight_all = 1
 
 " 4. Latex
-"let g:LatexBox_quickfix = 4
-"let g:LatexBox_latexmk_options = '-pdflatex="pdflatex -synctex=1 %O %S"'
-"let g:LatexBox_complete_inlineMath = 1
-
 let g:vimtex_compiler_latexmk = {'callback' : 0, 'continuous' : 0}
 let g:vimtex_quickfix_open_on_warning = 0
 let g:vimtex_view_method = 'skim'
