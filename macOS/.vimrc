@@ -77,7 +77,7 @@ nnoremap <silent> <F3> :Rgrep<CR>
 nnoremap <silent> <F9> :TagbarToggle<CR>
 let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
-" 1. Coloer Scheme
+" 1. Color Scheme
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set termguicolors

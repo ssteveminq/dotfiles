@@ -1,13 +1,17 @@
 Installation Document for Ubuntu
 - Gnome-terminal V3
-- Tmux Install
+- Tmux Install(https://launchpad.net/~pi-rho/+archive/ubuntu/dev)
+    sudo add-apt-repository ppa:pi-rho/dev
+    sudo apt-get update
+    sudo apt-get install tmux-next='version'
     .bashrc copy
     .tmux.conf copy
 - Vim Install (sudo apt-get install vim-nox)
     .vimrc copy
     vim-plug install
     Ultisnip fix
-    clang_complete install
+    maybe install for clang(see the directory)
+        sudo apt-get install clang or sudo apt-get install clang-3.5 llvm(not sure)
+    clang_complete install after git clone
 - Gazebo
 - Ros
-- Bitbucket ssh
