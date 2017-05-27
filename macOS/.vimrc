@@ -34,6 +34,7 @@ set noswapfile
 set nobackup
 set list
 set listchars=tab:»\ ,trail:·,extends:>,precedes:<
+set clipboard=unnamed
 
 let mapleader = ','
 let maplocalleader = ','
@@ -45,10 +46,12 @@ nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 """""""""""
 call plug#begin('~/.vim/plugged')
 Plug 'rhysd/vim-color-spring-night'
+Plug 'junegunn/seoul256.vim'
 Plug 'vim-scripts/a.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ervandew/supertab'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Townk/vim-autoclose'
@@ -77,13 +80,20 @@ nnoremap <silent> <F3> :Rgrep<CR>
 nnoremap <silent> <F9> :TagbarToggle<CR>
 let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
-" 1. Color Scheme
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-set termguicolors
+" 1. Coloer Scheme
 
-colorscheme spring-night
-let g:airline_theme = 'spring_night'
+" Spring Night
+"let &t_8f =
+""\<Esc>[38;2;%lu;%lu;%lum"
+"let &t_8b =
+""\<Esc>[48;2;%lu;%lu;%lum"
+"set termguicolors
+" Seoul256
+
+let g:seoul256_background = 236
+colo seoul256
+let g:airline_theme='zenburn'
+
 set laststatus=2
 highlight CursorLine    cterm=none
 

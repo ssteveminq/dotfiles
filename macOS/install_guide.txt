@@ -1,6 +1,7 @@
 Installation instruction
 
 - Tmux
+    Install ( brew install reattach-to-user-namespace )
 - Vim ( Brew Install )
     Install vim-plug : https://github.com/junegunn/vim-plug
     Install clang_complete : https://github.com/Rip-Rip/clang_complete/
