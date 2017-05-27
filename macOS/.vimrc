@@ -68,6 +68,8 @@ Plug 'davidhalter/jedi-vim'
 Plug 'hdima/python-syntax'
 Plug 'lervag/vimtex'
 Plug 'junegunn/vim-journal'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 
@@ -126,3 +128,4 @@ let g:vimtex_view_method='skim'
 
 " 5. Text
 au BufNewFile,BufRead *.txt set filetype=journal
+let g:table_mode_header_fillchar='='
