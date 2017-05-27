@@ -67,6 +67,7 @@ Plug 'majutsushi/tagbar'
 Plug 'davidhalter/jedi-vim'
 Plug 'hdima/python-syntax'
 Plug 'lervag/vimtex'
+Plug 'junegunn/vim-journal'
 call plug#end()
 
 
@@ -121,3 +122,6 @@ let python_highlight_all = 1
 let g:vimtex_compiler_latexmk = {'callback' : 0, 'continuous' : 0}
 let g:vimtex_quickfix_open_on_warning = 0
 let g:vimtex_view_method = 'skim'
+
+" 5. Text
+au BufNewFile,BufRead *.txt set filetype=journal
