@@ -68,6 +68,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'hdima/python-syntax'
 Plug 'lervag/vimtex'
 Plug 'junegunn/vim-journal'
+Plug 'junegunn/goyo.vim'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
 call plug#end()
@@ -93,7 +94,7 @@ let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 "set termguicolors
 " Seoul256
 
-let g:seoul256_background=236
+let g:seoul256_background=235
 colo seoul256
 let g:airline_theme='zenburn'
 
