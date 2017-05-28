@@ -17,6 +17,8 @@ Cheat Sheet
         o tmux new-session -s 'name'
         o tmux ls
         o tmux attach -t 'name'
+        o leader + ctrl + t
+        o leader + ctrl + c
 
 2. Vim
     0. General
