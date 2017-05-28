@@ -1,9 +1,44 @@
 Installation instruction
 
-- Tmux
-    Install ( brew install reattach-to-user-namespace )
-- Vim ( Brew Install )
-    Install vim-plug : https://github.com/junegunn/vim-plug
-    Install clang_complete : https://github.com/Rip-Rip/clang_complete/
-    Intall ctags-exuberant : brew install ctags-exuberant
-    .vim/plugged/vim-snippets/Ultisnips/cpp.snippets : pretty_print, saveVector add
+1. Tmux Install( > 2.3 )
+    > Brew install reattach-to-user-namespace
+    > .tmux.conf
+
+2. Vim ( brew install vim )
+    > Install vim-plug : https://github.com/junegunn/vim-plug
+    > Install clang_complete : https://github.com/Rip-Rip/clang_complete/
+    > Intall ctags-exuberant : brew install ctags-exuberant
+    > migrate snippet
+
+Cheat Sheet
+
+1. Tmux
+    0. General
+        o tmux new-session -s 'name'
+        o tmux ls
+        o tmux attach -t 'name'
+
+2. Vim
+    0. General
+        o leader + s
+        o leader + ci cy cs
+        o F3 : grep
+        o F5 : delete trailing error
+        o F8 : paste mode
+        o F9 : tagbar
+    1. C/C++
+        o ctrl + p
+        o ctrl + ]
+    2. Python
+        o , + d g
+    3. Latex
+        o , + ll
+        o , + lv
+        o , + lt
+    4. Text
+        o Table Mode
+          - , + tm
+          - |, ||
+        o Vim-surround
+          - ysiw + 'parenthesis'
+
