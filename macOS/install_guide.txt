@@ -44,7 +44,11 @@ Cheat Sheet
           - , + tm
           - |, ||
         o Vim-surround
-          - ysiw + 'parenthesis'
+          - ysiw + 'paren'
+          - cs 'from' 'to'
+          - ds'paren'
+          - yss'paren'
+          - Visual + S
     5. Git
         o Gstatus
         o -
