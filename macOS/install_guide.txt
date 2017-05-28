@@ -43,4 +43,9 @@ Cheat Sheet
           - |, ||
         o Vim-surround
           - ysiw + 'parenthesis'
+    5. Git
+        o Gstatus
+        o -
+        o Gcommit -m 'message'
+        o Gpush origin master
 
