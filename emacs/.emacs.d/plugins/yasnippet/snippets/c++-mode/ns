@@ -1,6 +1,0 @@
-# name: namespace ...
-# key: ns
-# --
-namespace ${1:`(downcase (sha9-parent-dir))`} {
-} // namespace $1
-

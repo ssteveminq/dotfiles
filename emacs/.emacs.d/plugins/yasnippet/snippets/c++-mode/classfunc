@@ -1,7 +1,0 @@
-# name : sha9-class-function ...
-# key : func
-# --
-${1:TYPE} ${2:function}($3) $4;
-
-$1 ${5:`(sha9-class-name)`}::$2($3) $4 {
-}
