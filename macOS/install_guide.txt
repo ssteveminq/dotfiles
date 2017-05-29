@@ -2,6 +2,7 @@ Installation instruction
 
 0. bashrc, prompt
     > Copy files
+
 1. Tmux Install( > 2.3 )
     > Brew install reattach-to-user-namespace
     > .tmux.conf
@@ -35,6 +36,8 @@ Cheat Sheet
         o ctrl + ]
     2. Python
         o , + d g
+        o source PATH/TO/VIRTUALENV/bin activate, deactivate ( virtual env )
+        o source activate CONDA/VIRTUALENV, source deactivate ( conda )
     3. Latex
         o , + ll
         o , + lv

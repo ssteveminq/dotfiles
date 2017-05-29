@@ -30,7 +30,6 @@ function set_git_branch {
   # Set arrow icon based on status against remote.
   remote_pattern="Your branch is (.*) (of|by|with)"
   if [[ ${git_status} =~ ${remote_pattern} ]]; then
-#    echo "ofof = ${BASH_REMATCH[1]}"
     if [[ ${BASH_REMATCH[1]} == ahead* ]]; then
       remote="↑"
     elif [[ ${BASH_REMATCH[1]} == behind* ]]; then
@@ -55,7 +54,6 @@ function set_git_branch {
   branch="$(git rev-parse --abbrev-ref HEAD)" # replace all 4 lines with this.
 
   # Set the final branch string.
-#  echo "bran ${branch}"
   BRANCH="${state}(${branch})${remote}${COLOR_NONE} "
 }
 
@@ -71,8 +69,14 @@ function set_prompt_symbol () {
 
 # Determine active Python virtualenv details.
 function set_virtualenv () {
-  if test -z "$VIRTUAL_ENV" ; then
+
+
+  if test -n "$CONDA_DEFAULT_ENV" ; then
+        PYTHON_VIRTUALENV="${SKYBLUE1}[`basename \"$CONDA_DEFAULT_ENV\"`]${COLOR_NONE} "
+
+  elif test -z "$VIRTUAL_ENV" ; then
       PYTHON_VIRTUALENV=""
+
   else
       PYTHON_VIRTUALENV="${SKYBLUE1}[`basename \"$VIRTUAL_ENV\"`]${COLOR_NONE} "
   fi
