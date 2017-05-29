@@ -60,6 +60,6 @@ Cheat Sheet
 
 3. Terminal Record
     1. asciinema rec
-    2. asciinema2gif http://~~/api/asciicasts/~~~
+    2. asciinema2gif --speed 2 http://~~/api/asciicasts/~~~
 
 TODO : switch to md
