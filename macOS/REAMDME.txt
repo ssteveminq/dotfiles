@@ -58,4 +58,8 @@ Cheat Sheet
         o Gcommit -m 'message'
         o Gpush origin master
 
+3. Terminal Record
+    1. asciinema rec
+    2. asciinema2gif http://~~/api/asciicasts/~~~
+
 TODO : switch to md
