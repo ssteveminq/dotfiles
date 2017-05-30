@@ -728,4 +728,29 @@ endsnippet
 snippet bp
 ipdb.sset_trace()
 endsnippet
+
+snippet ara
+np.arange($1)
+endsnippet
+
+snippet ran
+range($1)
+endsnippet
+
+snippet ma
+np.argmax($1)
+endsnippet
+
+snippet mi
+np.argmin($1)
+endsnippet
+
+snippet cho
+np.random.choice($1, $2)
+endsnippet
+
+snippet obs
+next_state, reward, done, _ = env.step(action)
+endsnippet
+
 # vim:ft=snippets:
