@@ -14,6 +14,7 @@ set pastetoggle=<F8>
 set nowrap
 set textwidth=0
 set cursorline
+set colorcolumn=80
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -33,10 +34,12 @@ set noswapfile
 set nobackup
 set list
 set listchars=tab:»\ ,trail:·,extends:>,precedes:<
+set clipboard=unnamed
 
 let mapleader = ','
 let maplocalleader = ','
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
 """""""""""
 " Plugins "
@@ -63,6 +66,10 @@ Plug 'majutsushi/tagbar'
 Plug 'davidhalter/jedi-vim'
 Plug 'hdima/python-syntax'
 Plug 'lervag/vimtex'
+Plug 'junegunn/vim-journal'
+Plug 'junegunn/goyo.vim'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 """"""""""""""""""
@@ -71,6 +78,9 @@ call plug#end()
 " 0. General
 let Grep_Default_Options = '-rn'
 nnoremap <silent> <F3> :Rgrep<CR>
+
+nnoremap <silent> <F9> :TagbarToggle<CR>
+"let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
 " 1. Color Scheme
 let g:seoul256_background = 236
@@ -103,3 +113,7 @@ let python_highlight_all = 1
 let g:vimtex_compiler_latexmk = {'callback' : 0, 'continuous' : 0}
 let g:vimtex_quickfix_open_on_warning = 0
 let g:vimtex_view_method = 'skim'
+
+" 5. Text
+au BufNewFile,BufRead *.txt set filetype=journal
+let g:table_mode_header_fillchar='='
