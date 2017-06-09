@@ -34,6 +34,7 @@ Cheat Sheet
     1. C/C++
         o ctrl + p
         o ctrl + ]
+        o CXX="$HOME/.vim/bin/cc_args.py clang++" cmake ..
     2. Python
         o , + d g
         o source PATH/TO/VIRTUALENV/bin activate, deactivate ( virtual env )
@@ -62,4 +63,21 @@ Cheat Sheet
     1. asciinema rec
     2. asciinema2gif --speed 2 http://~~/api/asciicasts/~~~
 
-TODO : switch to md
+TODO : switch to md, bashrc copy
+
+
+#install.sh#
+
+rc, cc_args, snippet, to base
+homebrew
+iterm
+tmux
+vim
+vimplug
+clang
+ctags
+jedi(anaconda --> virtual env)
+
+todo
+python jedi(complettion + goto)
+iterm color

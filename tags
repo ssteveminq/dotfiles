@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CONFIG_NAME	macOS/cc_args.py	/^CONFIG_NAME = ".clang_complete"$/;"	v
+args	macOS/cc_args.py	/^args = parseArguments(sys.argv)$/;"	v
+configuration	macOS/cc_args.py	/^configuration = readConfiguration()$/;"	v
+mergeLists	macOS/cc_args.py	/^def mergeLists(base, new):$/;"	f
+parseArguments	macOS/cc_args.py	/^def parseArguments(arguments):$/;"	f
+proc	macOS/cc_args.py	/^proc = subprocess.Popen(sys.argv[1:])$/;"	v
+readConfiguration	macOS/cc_args.py	/^def readConfiguration():$/;"	f
+result	macOS/cc_args.py	/^result = mergeLists(configuration, args)$/;"	v
+ret	macOS/cc_args.py	/^ret = proc.wait()$/;"	v
+subprocess	macOS/cc_args.py	/^import subprocess$/;"	i
+sys	macOS/cc_args.py	/^import sys$/;"	i
+writeConfiguration	macOS/cc_args.py	/^def writeConfiguration(lines):$/;"	f
