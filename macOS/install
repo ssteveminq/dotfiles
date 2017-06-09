@@ -39,3 +39,5 @@ if [ $(uname -s) = 'Darwin' ]; then
 
   brew cask install xquartz iterm2 spectacle virtualbox virtualbox-extension-pack vagrant mat visualvm spotifree flux flycut keycastr
 fi
+
+# cc_args snippet
