@@ -137,5 +137,3 @@ let g:vimtex_view_method='skim'
 " 5. Text
 au BufNewFile,BufRead *.txt set filetype=journal
 au BufNewFile,BufRead CMakeLists.txt set filetype=cmake
-
-
