@@ -92,9 +92,9 @@ ctrl p
 ```
 - [table mode](https://github.com/dhruvasagar/vim-table-mode)
 ```vim
-" table mode enable / disalbe
+" table mode enable / disable
 , + t + m
-" row and colum
+" row and column
 | , ||
 ```
 - [vim surround](https://github.com/tpope/vim-surround)
