@@ -1,6 +1,6 @@
 # Tmux
-o Key binding
-```
+### Key Binding
+```sh
 # new session
 $ tmux new-session -s 'session-name'
 # detach session
@@ -31,14 +31,14 @@ $ ctrl a + ctrl c
 $ cd ~/**<TAB>
 $ vim ~/**<TAB>
 ```
-Vim
-    Basic
+# Vim
+### Basic
         navigation : hjkl {} :line number ctrl+e,y
         mode
         file open, save, quit :
         buffer
 
-    General
+### General
         fzf
         commenter
         snippet
@@ -54,19 +54,19 @@ Vim
         goyo and friend
         git fugitive
 
-    C++/C
+### C++/C
         a.vim
         completer( goto def )
         clang_complete
         ctags
 
-    Python
+### Python
         goto( TODO )
 
-    Latex
+### Latex
         ,ll
         ,lv
         ,lt
 
-    Txt
+### Txt
         bullet
