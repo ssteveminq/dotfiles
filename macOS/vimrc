@@ -86,7 +86,7 @@ nnoremap <silent> <F9> :TagbarToggle<CR>
 let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
 " 1. Coloer Scheme
-let g:seoul256_background=235
+let g:seoul256_background=237
 colo seoul256
 let g:airline_theme='zenburn'
 
@@ -99,7 +99,8 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
-let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+"let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
+let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 let g:clang_close_preview=1
 
 let g:cpp_class_scope_highlight=1

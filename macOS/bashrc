@@ -1,8 +1,15 @@
-function frameworkpython {
-    if [[ ! -z "$VIRTUAL_ENV" ]]; then
-        PYTHONHOME=$VIRTUAL_ENV /usr/local/bin/python "$@"
-    else
-        /usr/local/bin/python "$@"
-    fi
-}
+# .bashrc for OS X
+ 
+alias vi='vim'
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+if [ -d ~/github/iTerm2-Color-Schemes/ ]; then
+  ftheme() {
+    local base
+    base=~/github/iTerm2-Color-Schemes
+    $base/tools/preview.rb "$(
+      ls {$base/schemes,~/.vim/plugged/seoul256.vim/iterm2}/*.itermcolors | fzf)"
+  }
+fi

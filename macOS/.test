@@ -1,3 +1,5 @@
+echo hi
 cd $(dirname $BASH_SOURCE)
 BASE=$(pwd)
+
 
