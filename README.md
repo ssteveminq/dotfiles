@@ -3,7 +3,7 @@ Personal dotfiles for *NIX systems
 
 ## Installation
 ``` 
-$ git clone ~/https://github.com/junhyeokahn/dotfiles.git
+$ git clone --recursive ~/https://github.com/junhyeokahn/dotfiles.git
 $ cd ~/dotfiles
 $ source ./install
 ```
