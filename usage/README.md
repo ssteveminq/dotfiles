@@ -105,10 +105,13 @@ ctrl n
 ```vim
 " switch to header or source
 :A or AV
-" completer( to use semantic need to generate file .clang_complete : if you use cmake, you could use ccmake to auto gen )
-" no trigger for completer, async type
-" goto definition and come back
-ctrl } or o
+" completer
+    " to use semantic need to generate file .clang_complete : if you use cmake, you could use ccmake to auto genenerate
+    " no trigger for completer, async type
+" goto definition
+ctrl } 
+" come back to previous
+ctrlo
 ```
 ### Python
 TODO
