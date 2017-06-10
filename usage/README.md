@@ -33,18 +33,28 @@ $ vim ~/**<TAB>
 ```
 # Vim
 ### Basic
-        navigation : hjkl {} :line number ctrl+e,y
-        mode
-        file open, save, quit :
-        buffer
+- navigation
+        - h j k l : arrow key
+        - e b : navigate word
+        - { } : paragraph
+        - :number : goto line
+        - ctrl e or y : grab
+        - v V : visual mode
+        - i a I A : insert mode
+        - :e 'file-name' 
+        - :w : save
+        - :q : quit
+        - ctrl w + v or s : new buffer
+        - ctrl w + h j k l : navigation buffer
+        - f + 'alphabet' : goto alphabet
 
 ### General
-        fzf
-        commenter
-        snippet
-        f3
-        f5
-        ,s
+- fzf
+- commenter
+- snippet
+- f3
+- f5
+- ,s
         f8
         f9
         table
