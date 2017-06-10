@@ -68,10 +68,10 @@ f + 'alphabet'
 " fzf
 ctrl p
 " commenter
-> " invert
-, + c + i 
-> " invert and yang
-, + c + y
+    " invert
+    , + c + i 
+    " invert and yang
+    , + c + y
 " snippet (.vim/plugged/vim-plugged/Ultisnip)
 'trigger' + <TAB>
 " rgrep
@@ -79,34 +79,46 @@ f3
 " kill white space
 f5
 " replace
-,s 'word'
-,s 'word'/gc
+    " change all
+    ,s 'word'
+    " change one by one
+    ,s 'word'/gc
 " paste mode
 f8
 " tag toggle
 f9
 " table mode
-> " table mode enable / disalbe
-, + t + m
-        vim surround
-        multi curosr
-        clever-f
-        goyo and friend
-        git fugitive
+    " table mode enable / disalbe
+    , + t + m
+    " row and colum
+    | , ||
+" vim surround
+, + S + 'parenthesis'
+"multi curosr ( on the word or visual mode )
+ctrl n
+" goyo
+:Goyo
+" git fugitive
+:Gdiff
 ```
 ### C++/C
-        a.vim
-        completer( goto def )
-        clang_complete
-        ctags
-
+```vim
+" switch to header or source
+:A or AV
+" completer( to use semantic need to generate file .clang_complete : if you use cmake, you could use ccmake to auto gen )
+" no trigger for completer, async type
+" goto definition and come back
+ctrl } or o
+```
 ### Python
-        goto( TODO )
+TODO
 
 ### Latex
-        ,ll
-        ,lv
-        ,lt
-
-### Txt
-        bullet
+```latex
+# latex make
+,ll
+# pdf open
+,lv
+# toggle table of content
+,lt
+```
