@@ -1,4 +1,7 @@
-### Installation
+## Dotfiles
+Personal dotfiles for *NIX systems
+
+## Installation
 ``` 
 $ git clone ~/https://github.com/junhyeokahn/dotfiles.git ``
 $ cd ~/dotfiles
