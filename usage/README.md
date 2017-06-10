@@ -64,54 +64,72 @@ f + 'alphabet'
 ```
 
 ### General
+- [fuzzy finder](https://github.com/junegunn/fzf)
 ```vim
-" fzf
 ctrl p
-" commenter
-    " invert
-    , + c + i 
-    " invert and yank
-    , + c + y
-" snippet (.vim/plugged/vim-plugged/Ultisnip)
+```
+- [commenter](https://github.com/scrooloose/nerdcommenter)
+```vim
+" invert
+, + c + i 
+" invert and yank
+, + c + y
+```
+- [snippet](https://github.com/honza/vim-snippets)
+```vim
 'trigger' + <TAB>
-" rgrep
-f3
-" kill white space
-f5
-" replace
-    " change all
-    ,s 'word'
-    " change one by one
-    ,s 'word'/gc
-" paste mode
-f8
-" tag toggle
-f9
-" table mode
-    " table mode enable / disalbe
-    , + t + m
-    " row and colum
-    | , ||
-" vim surround
+```
+- rgrep : f3
+- kill white space : f5
+- paste mode : f8
+- [tagbar](https://github.com/majutsushi/tagbar) : f9
+- replace
+```vim
+" change all
+,s 'word'
+" change one by one
+,s 'word'/gc
+```
+- [table mode](https://github.com/dhruvasagar/vim-table-mode)
+```vim
+" table mode enable / disalbe
+, + t + m
+" row and colum
+| , ||
+```
+- [vim surround](https://github.com/tpope/vim-surround)
+```vim
 , + S + 'parenthesis'
-" multi curosr ( on the word or visual mode )
+```
+- [multi curosr](https://github.com/paradigm/vim-multicursor) ( on the word or visual mode )
+```vim
 ctrl n
-" goyo
+```
+- [goyo](https://github.com/junegunn/goyo.vim)
+```vim
 :Goyo
-" git fugitive
+```
+- [git fugitive](https://github.com/tpope/vim-fugitive)
+```vim
 :Gdiff
-" easy align
+```
+- [easy align](https://github.com/junegunn/vim-easy-align)
+```vim
 ga
 ```
 ### C++/C
+- [a.vim](https://github.com/vim-scripts/a.vim)
 ```vim
 " switch to header or source
 :A or AV
-" completer
-    " to use semantic need to generate file .clang_complete : if you use cmake, you could use ccmake to auto genenerate
-    " no trigger for completer, async type
+```
+- [completer](https://github.com/maralla/completor.vim)
+to use semantic need to generate file .clang_complete : if you use cmake, you could use ccmake to auto genenerate
+no trigger for completer, async type
+- [ctags](https://github.com/ludovicchabant/vim-gutentags)
+```vim
 " goto definition
-ctrl } 
+ctrl }
 " come back to previous
 ctrl o
 ```
@@ -125,6 +143,6 @@ For OS X, install [Skim](https://sourceforge.net/projects/skim-app/) for viewer
 ,ll
 # pdf open
 ,lv
-# toggle table of content
+# table of content
 ,lt
 ```
