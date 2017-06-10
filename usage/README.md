@@ -1,6 +1,36 @@
-Tmux
-    General : session, ls, attach, detach, window, pane, copy mode, to vim, capture, fzf
-
+# Tmux
+o Key binding
+```
+# new session
+$ tmux new-session -s 'session-name'
+# detach session
+$ tmux detach
+# attach session
+$ tmux attach -t 'session-name'
+# session list
+$ tmux ls
+# new window
+$ ctrl a + c
+# window navigation
+$ ctrl a + 'window-number'
+# window kill
+$ ctrl a + x
+# new pane
+$ ctrl a + v or s
+# pane navigation
+$ ctrl a + hjkl
+# pane kill
+$ ctrl a + x
+# copy mode
+$ ctrl a + [
+# terminal copy and past to vim
+$ ctrl a + ctrl t
+# terminal screen capture
+$ ctrl a + ctrl c
+# fuzzy-finder
+$ cd ~/**<TAB>
+$ vim ~/**<TAB>
+```
 Vim
     Basic
         navigation : hjkl {} :line number ctrl+e,y
