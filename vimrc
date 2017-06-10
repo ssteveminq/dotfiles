@@ -1,3 +1,8 @@
+""""""""""""""""""""""""""""""""""""""""""""
+" .vimrc                                   "
+" Junhyeok Ahn ( junhyeokahn91@gmail.com ) "
+""""""""""""""""""""""""""""""""""""""""""""
+
 """""""""""""""""""
 " General Setting "
 """""""""""""""""""
@@ -99,7 +104,6 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
-"let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib'
 let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 let g:clang_close_preview=1
 

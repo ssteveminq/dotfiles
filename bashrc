@@ -1,9 +1,8 @@
-# .bashrc for OS X
-
+############################################
+# .bashrc                                  #
+# Junhyeok Ahn ( junhyeokahn91@gmail.com ) #
+############################################
 alias vi='vim'
-
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 if [ -n "$TMUX_PANE" ]; then
   # https://github.com/wellle/tmux-complete.vim
@@ -37,3 +36,9 @@ if [ -n "$TMUX_PANE" ]; then
 elif [ -d ~/dotfiles/iTerm2-Color-Schemes/ ]; then
   ~/dotfiles/iTerm2-Color-Schemes/tools/preview.rb ~/.vim/plugged/seoul256.vim/iterm2/seoul256.itermcolors
 fi
+
+ccmake() {
+  CXX="$HOME/dotfiles/clang/cc_args.py clang++" cmake ..
+}
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

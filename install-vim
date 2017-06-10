@@ -1,5 +1,10 @@
 #!/bin/bash
 
+############################################
+# .install-vim                             #
+# Junhyeok Ahn ( junhyeokahn91@gmail.com ) #
+############################################
+
 cd $(dirname $BASH_SOURCE)
 BASE=$(pwd)
 
@@ -12,3 +17,7 @@ ln -sf $BASE/vimrc ~/.vimrc
 
 vim +PlugInstall +qall
 
+for snip in cpp.snippets python.snippets; do
+  rm ~/.vim/plugged/vim-snippets/UltiSnips/$snip
+  ln -sfv $BASE/snippets/$snip ~/.vim/plugged/vim-snippets/UltiSnips/$snip
+done
