@@ -34,36 +34,66 @@ $ vim ~/**<TAB>
 # Vim
 ### Basic
 - navigation
-        - h j k l : arrow key
-        - e b : navigate word
-        - { } : paragraph
-        - :number : goto line
-        - ctrl e or y : grab
-        - v V : visual mode
-        - i a I A : insert mode
-        - :e 'file-name' 
-        - :w : save
-        - :q : quit
-        - ctrl w + v or s : new buffer
-        - ctrl w + h j k l : navigation buffer
-        - f + 'alphabet' : goto alphabet
+```vim 
+" arrow key
+h j k l
+" navigate word
+e b 
+" navigate paragraph
+{ }
+" goto line
+:'number'
+" grab screen
+ctrl e or y
+" visual mode
+v V
+" insert mode
+i a I A
+" edit file
+:e
+" save file
+:w
+" quit file
+:q
+" new buffer
+ctrl w + v or s
+" navigate buffer
+ctrl w + h j k l
+" goto alphabet
+f + 'alphabet'
+```
 
 ### General
-- fzf
-- commenter
-- snippet
-- f3
-- f5
-- ,s
-        f8
-        f9
-        table
+```vim
+" fzf
+ctrl p
+" commenter
+> " invert
+, + c + i 
+> " invert and yang
+, + c + y
+" snippet (.vim/plugged/vim-plugged/Ultisnip)
+'trigger' + <TAB>
+" rgrep
+f3
+" kill white space
+f5
+" replace
+,s 'word'
+,s 'word'/gc
+" paste mode
+f8
+" tag toggle
+f9
+" table mode
+> " table mode enable / disalbe
+, + t + m
         vim surround
         multi curosr
         clever-f
         goyo and friend
         git fugitive
-
+```
 ### C++/C
         a.vim
         completer( goto def )
