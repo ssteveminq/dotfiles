@@ -70,7 +70,7 @@ ctrl p
 " commenter
     " invert
     , + c + i 
-    " invert and yang
+    " invert and yank
     , + c + y
 " snippet (.vim/plugged/vim-plugged/Ultisnip)
 'trigger' + <TAB>
@@ -94,12 +94,14 @@ f9
     | , ||
 " vim surround
 , + S + 'parenthesis'
-"multi curosr ( on the word or visual mode )
+" multi curosr ( on the word or visual mode )
 ctrl n
 " goyo
 :Goyo
 " git fugitive
 :Gdiff
+" easy align
+ga
 ```
 ### C++/C
 ```vim
@@ -111,13 +113,14 @@ ctrl n
 " goto definition
 ctrl } 
 " come back to previous
-ctrlo
+ctrl o
 ```
 ### Python
 TODO
 
 ### Latex
-```latex
+For OS X, install [Skim](https://sourceforge.net/projects/skim-app/) for viewer
+```sh
 # latex make
 ,ll
 # pdf open
