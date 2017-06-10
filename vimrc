@@ -90,6 +90,19 @@ nnoremap <silent> <c-p> :FZF<CR>
 nnoremap <silent> <F9> :TagbarToggle<CR>
 let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+let g:easy_align_delimiters = {}
+let g:easy_align_delimiters['d'] = {
+\ 'pattern': ' \ze\S\+\s*[;=]',
+\ 'left_margin': 0, 'right_margin': 0
+\ }
+
+let g:table_mode_header_fillchar='='
+
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
 " 1. Coloer Scheme
 let g:seoul256_background=237
 colo seoul256
@@ -125,10 +138,4 @@ let g:vimtex_view_method='skim'
 au BufNewFile,BufRead *.txt set filetype=journal
 au BufNewFile,BufRead CMakeLists.txt set filetype=cmake
 
-let g:table_mode_header_fillchar='='
 
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
-
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
