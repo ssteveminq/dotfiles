@@ -54,6 +54,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/limelight.vim'
+Plug 'junegunn/vim-slash'
 Plug 'vim-scripts/a.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
@@ -125,11 +126,12 @@ let g:cpp_class_scope_highlight=1
 let g:cpp_member_variable_highlight=1
 let g:cpp_experimental_template_highlight=1
 let g:cpp_concepts_highlight=1
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " 3. Python
 let g:completor_python_binary = 'python'
 let python_highlight_all=1
-let g:jedi#use_splits_not_buffers = "right"
+let g:jedi#use_splits_not_buffers = "left"
 let g:jedi#popup_on_dot=0
 let g:jedi#completions_enabled = 0
 
