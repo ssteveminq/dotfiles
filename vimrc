@@ -76,6 +76,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
 Plug 'maralla/completor.vim'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'davidhalter/jedi-vim'
 call plug#end()
 
 
@@ -118,7 +119,7 @@ let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
 let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
-let g:clang_close_preview=1
+"let g:completor_clang_binary = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
 let g:cpp_class_scope_highlight=1
 let g:cpp_member_variable_highlight=1
@@ -128,6 +129,9 @@ let g:cpp_concepts_highlight=1
 " 3. Python
 let g:completor_python_binary = 'python'
 let python_highlight_all=1
+let g:jedi#use_splits_not_buffers = "right"
+let g:jedi#popup_on_dot=0
+let g:jedi#completions_enabled = 0
 
 " 4. Latex
 let g:vimtex_compiler_latexmk={'callback':0, 'continuous':0}
