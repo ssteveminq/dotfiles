@@ -1,3 +1,6 @@
 [submodule "iTerm2-Color-Schemes"]
 	path = iTerm2-Color-Schemes
 	url = https://github.com/junhyeokahn/iTerm2-Color-Schemes.git
+[submodule "seoul256-gnome-terminal"]
+	path = seoul256-gnome-terminal
+	url = https://github.com/junhyeokahn/seoul256-gnome-terminal.git

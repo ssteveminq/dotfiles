@@ -55,6 +55,7 @@ Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/limelight.vim'
 Plug 'junegunn/vim-slash'
+Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'vim-scripts/a.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'vim-airline/vim-airline'
@@ -109,6 +110,7 @@ autocmd! User GoyoLeave Limelight!
 let g:seoul256_background=237
 colo seoul256
 let g:airline_theme='zenburn'
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 set laststatus=2
 highlight CursorLine cterm=none
@@ -129,11 +131,12 @@ let g:cpp_concepts_highlight=1
 map <A-]> :vsp <CR> <C-w>l:exec("tag ".expand("<cword>"))<CR>
 
 " 3. Python
-let g:completor_python_binary = 'python'
+let g:completor_python_binary='python'
 let python_highlight_all=1
-let g:jedi#use_splits_not_buffers = "right"
+let g:jedi#use_splits_not_buffers="right"
 let g:jedi#popup_on_dot=0
-let g:jedi#completions_enabled = 0
+let g:jedi#completions_enabled=0
+"let g:jedi#show_call_signatures=0
 
 " 4. Latex
 let g:vimtex_compiler_latexmk={'callback':0, 'continuous':0}
