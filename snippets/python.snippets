@@ -737,25 +737,29 @@ snippet ran
 range($1)
 endsnippet
 
-snippet ma
+snippet max
 np.argmax($1)
 endsnippet
 
-snippet mi
+snippet min
 np.argmin($1)
 endsnippet
 
 snippet cho
-np.random.choice($1, $2)
+np.random.choice( np.arange(len($1), p=$2)
 endsnippet
 
-snippet obs
+snippet step
 next_state, reward, done, _ = env.step(action)
 endsnippet
 
 snippet ini
 import numpy as np
 import tensorflow as tf
+endsnippet
+
+snippet pl
+tf.placeholder(dtype=tf.$1, shape=[$2], name="$3")
 endsnippet
 
 # vim:ft=snippets:

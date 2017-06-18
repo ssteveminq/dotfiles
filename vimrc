@@ -133,10 +133,10 @@ map <A-]> :vsp <CR> <C-w>l:exec("tag ".expand("<cword>"))<CR>
 " 3. Python
 let g:completor_python_binary='python'
 let python_highlight_all=1
-let g:jedi#use_splits_not_buffers="right"
+"let g:jedi#use_splits_not_buffers="right"
 let g:jedi#popup_on_dot=0
 let g:jedi#completions_enabled=0
-"let g:jedi#show_call_signatures=0
+let g:jedi#show_call_signatures=0
 
 " 4. Latex
 let g:vimtex_compiler_latexmk={'callback':0, 'continuous':0}

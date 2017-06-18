@@ -41,4 +41,8 @@ ccmake() {
   CXX="$HOME/dotfiles/clang/cc_args.py clang++" cmake ..
 }
 
+rlenv() {
+  source activate rllab3
+}
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
