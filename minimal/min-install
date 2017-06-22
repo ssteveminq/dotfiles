@@ -26,7 +26,7 @@ sudo apt-get install vim-nox
 sudo apt-get install ctags
 sudo apt-get install clang-3.8
 
-source ~/dotfiles/seoul256-gnome-terminal/seoul256-dark.sh
 source ./min-install-vim
+source ~/dotfiles/seoul256-gnome-terminal/seoul256-dark.sh
 
 # TODO : tmux conf copy mode, combine for *nix, clang
