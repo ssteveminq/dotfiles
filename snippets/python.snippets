@@ -762,4 +762,19 @@ snippet pl
 tf.placeholder(dtype=tf.$1, shape=[$2], name="$3")
 endsnippet
 
+snippet ful
+tf.contrib.layers.fully_connected(
+	inputs=$1,
+	num_outputs=$2,
+	activation_fn=$3)
+endsnippet
+
+snippet exp
+tf.expand_dims($1, axis=$2)
+endsnippet
+
+snippet sq
+tf.squeeze($1)
+endsnippet
+
 # vim:ft=snippets:
