@@ -769,6 +769,10 @@ tf.contrib.layers.fully_connected(
 	activation_fn=$3)
 endsnippet
 
+snippet var
+tf.get_variable('$1', [$2], initializer=$3, dtype=tf.$4)
+endsnippet
+
 snippet exp
 tf.expand_dims($1, axis=$2)
 endsnippet
@@ -776,5 +780,6 @@ endsnippet
 snippet sq
 tf.squeeze($1)
 endsnippet
+
 
 # vim:ft=snippets:

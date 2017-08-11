@@ -45,4 +45,8 @@ rlenv() {
   source activate rllab3
 }
 
+deac() {
+  source deactivate
+}
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
