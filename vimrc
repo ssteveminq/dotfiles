@@ -79,6 +79,7 @@ Plug 'tpope/vim-surround'
 Plug 'maralla/completor.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'davidhalter/jedi-vim'
+Plug 'rhysd/vim-grammarous'
 call plug#end()
 
 
@@ -133,7 +134,6 @@ map <A-]> :vsp <CR> <C-w>l:exec("tag ".expand("<cword>"))<CR>
 " 3. Python
 let g:completor_python_binary='python'
 let python_highlight_all=1
-"let g:jedi#use_splits_not_buffers="right"
 let g:jedi#popup_on_dot=0
 let g:jedi#completions_enabled=0
 let g:jedi#show_call_signatures=0
@@ -146,3 +146,30 @@ let g:vimtex_view_method='skim'
 " 5. Filetype
 au BufNewFile,BufRead *.txt set filetype=journal
 au BufNewFile,BufRead CMakeLists.txt set filetype=cmake
+
+" 6. Grammarous
+let g:grammarous#default_comments_only_filetypes = {
+            \ '*' : 0,
+            \ }
+let g:grammarous#disabled_rules = {
+            \ '*' : ['WHITESPACE_RULE', 'EN_QUOTES', 'SENTENCE_WHITESPACE'],
+            \ }
+let g:grammarous#show_first_error=0
+let g:grammarous#hooks = {}
+nnoremap <Leader>g :GrammarousCheck<CR>
+function! g:grammarous#hooks.on_check(errs) abort
+    nmap <buffer><C-n> <Plug>(grammarous-move-to-next-error)
+    nmap <buffer><C-p> <Plug>(grammarous-move-to-previous-error)
+    nmap <buffer><C-f> <Plug>(grammarous-fixit)
+    nmap <buffer><C-g> <Plug>(grammarous-disable-rule)
+    nmap <buffer><C-i> <Plug>(grammarous-open-info-window)
+    nmap <buffer><C-r> <Plug>(grammarous-reset)
+endfunction
+function! g:grammarous#hooks.on_reset(errs) abort
+    nunmap <buffer><C-n> <Plug>(grammarous-move-to-next-error)
+    nunmap <buffer><C-p> <Plug>(grammarous-move-to-previous-error)
+    nunmap <buffer><C-f> <Plug>(grammarous-fixit)
+    nunmap <buffer><C-g> <Plug>(grammarous-disable-rule)
+    nunmap <buffer><C-i> <Plug>(grammarous-open-info-window)
+    nunmap <buffer><C-r> <Plug>(grammarous-reset)
+endfunction
