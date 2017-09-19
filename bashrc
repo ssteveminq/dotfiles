@@ -45,6 +45,14 @@ rlenv() {
   source activate rllab3
 }
 
+opensimenv() {
+  source activate opensim-rl
+}
+
+bsenv () {
+  source activate baseline
+}
+
 deac() {
   source deactivate
 }
