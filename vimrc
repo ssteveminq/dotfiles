@@ -1,7 +1,7 @@
-""""""""""""""""""""""""""""""""""""""""""""
-" .vimrc                                   "
-" Junhyeok Ahn ( junhyeokahn91@gmail.com ) "
-""""""""""""""""""""""""""""""""""""""""""""
+"===========================================
+" .vimrc
+" Junhyeok Ahn ( junhyeokahn91@gmail.com )
+"===========================================
 
 """""""""""""""""""
 " General Setting "
@@ -142,10 +142,14 @@ let g:jedi#show_call_signatures=0
 let g:vimtex_compiler_latexmk={'callback':0, 'continuous':0}
 let g:vimtex_quickfix_open_on_warning=0
 let g:vimtex_view_method='skim'
+let g:vimtex_fold_manual=1
+let g:vimtex_matchparen_enabled=1
+let g:vimtex_indent_enabled = 0
 
 " 5. Filetype
 au BufNewFile,BufRead *.txt set filetype=journal
 au BufNewFile,BufRead CMakeLists.txt set filetype=cmake
+au BufNewFile,BufRead *.urdf set filetype=xml
 
 " 6. Grammarous
 let g:grammarous#default_comments_only_filetypes = {

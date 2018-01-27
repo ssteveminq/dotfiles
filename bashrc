@@ -53,8 +53,17 @@ bsenv () {
   source activate baseline
 }
 
+pyOp() {
+  source activate pyOp
+}
+
+dart() {
+  source activate dart
+}
+
 deac() {
   source deactivate
 }
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
