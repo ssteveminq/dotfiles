@@ -122,7 +122,9 @@ let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
-let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+"TODO : high sierra
+let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+"let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 "let g:completor_clang_binary = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
 let g:cpp_class_scope_highlight=1
