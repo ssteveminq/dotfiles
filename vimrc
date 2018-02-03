@@ -76,7 +76,7 @@ Plug 'junegunn/vim-journal'
 Plug 'junegunn/goyo.vim'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
-Plug 'maralla/completor.vim'
+"Plug 'maralla/completor.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'davidhalter/jedi-vim'
 Plug 'rhysd/vim-grammarous'
@@ -117,13 +117,13 @@ set laststatus=2
 highlight CursorLine cterm=none
 
 " 2. C,C++
-let g:UltiSnipsUsePythonVersion=2
+let g:UltiSnipsUsePythonVersion=3
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
 "TODO : high sierra
-let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+"let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
 "let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 "let g:completor_clang_binary = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
@@ -134,7 +134,7 @@ let g:cpp_concepts_highlight=1
 map <A-]> :vsp <CR> <C-w>l:exec("tag ".expand("<cword>"))<CR>
 
 " 3. Python
-let g:completor_python_binary='python'
+"let g:completor_python_binary='python2'
 let python_highlight_all=1
 let g:jedi#popup_on_dot=0
 let g:jedi#completions_enabled=0
