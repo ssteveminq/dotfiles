@@ -1,7 +1,7 @@
-""""""""""""""""""""""""""""""""""""""""""""
-" .vimrc                                   "
-" Junhyeok Ahn ( junhyeokahn91@gmail.com ) "
-""""""""""""""""""""""""""""""""""""""""""""
+"===========================================
+" .vimrc
+" Junhyeok Ahn ( junhyeokahn91@gmail.com )
+"===========================================
 
 """""""""""""""""""
 " General Setting "
@@ -76,9 +76,10 @@ Plug 'junegunn/vim-journal'
 Plug 'junegunn/goyo.vim'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'tpope/vim-surround'
-Plug 'maralla/completor.vim'
+"Plug 'maralla/completor.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'davidhalter/jedi-vim'
+Plug 'rhysd/vim-grammarous'
 call plug#end()
 
 
@@ -116,12 +117,14 @@ set laststatus=2
 highlight CursorLine cterm=none
 
 " 2. C,C++
-let g:UltiSnipsUsePythonVersion=2
+let g:UltiSnipsUsePythonVersion=3
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-n>"
 let g:UltiSnipsJumpBackwardTrigger="<c-p>"
 
-let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+"TODO : high sierra
+"let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+"let g:clang_library_path='/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 "let g:completor_clang_binary = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
 
 let g:cpp_class_scope_highlight=1
@@ -131,9 +134,8 @@ let g:cpp_concepts_highlight=1
 map <A-]> :vsp <CR> <C-w>l:exec("tag ".expand("<cword>"))<CR>
 
 " 3. Python
-let g:completor_python_binary='python'
+"let g:completor_python_binary='python2'
 let python_highlight_all=1
-"let g:jedi#use_splits_not_buffers="right"
 let g:jedi#popup_on_dot=0
 let g:jedi#completions_enabled=0
 let g:jedi#show_call_signatures=0
@@ -142,7 +144,38 @@ let g:jedi#show_call_signatures=0
 let g:vimtex_compiler_latexmk={'callback':0, 'continuous':0}
 let g:vimtex_quickfix_open_on_warning=0
 let g:vimtex_view_method='skim'
+let g:vimtex_fold_manual=1
+let g:vimtex_matchparen_enabled=1
+let g:vimtex_indent_enabled = 0
 
-" 5. Text
+" 5. Filetype
 au BufNewFile,BufRead *.txt set filetype=journal
 au BufNewFile,BufRead CMakeLists.txt set filetype=cmake
+au BufNewFile,BufRead *.urdf set filetype=xml
+
+" 6. Grammarous
+let g:grammarous#default_comments_only_filetypes = {
+            \ '*' : 0,
+            \ }
+let g:grammarous#disabled_rules = {
+            \ '*' : ['WHITESPACE_RULE', 'EN_QUOTES', 'SENTENCE_WHITESPACE'],
+            \ }
+let g:grammarous#show_first_error=0
+let g:grammarous#hooks = {}
+nnoremap <Leader>g :GrammarousCheck<CR>
+function! g:grammarous#hooks.on_check(errs) abort
+    nmap <buffer><C-n> <Plug>(grammarous-move-to-next-error)
+    nmap <buffer><C-p> <Plug>(grammarous-move-to-previous-error)
+    nmap <buffer><C-f> <Plug>(grammarous-fixit)
+    nmap <buffer><C-g> <Plug>(grammarous-disable-rule)
+    nmap <buffer><C-i> <Plug>(grammarous-open-info-window)
+    nmap <buffer><C-r> <Plug>(grammarous-reset)
+endfunction
+function! g:grammarous#hooks.on_reset(errs) abort
+    nunmap <buffer><C-n> <Plug>(grammarous-move-to-next-error)
+    nunmap <buffer><C-p> <Plug>(grammarous-move-to-previous-error)
+    nunmap <buffer><C-f> <Plug>(grammarous-fixit)
+    nunmap <buffer><C-g> <Plug>(grammarous-disable-rule)
+    nunmap <buffer><C-i> <Plug>(grammarous-open-info-window)
+    nunmap <buffer><C-r> <Plug>(grammarous-reset)
+endfunction
