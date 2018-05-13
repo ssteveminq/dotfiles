@@ -20,7 +20,7 @@ done
 
 sudo add-apt-repository ppa:pi-rho/dev
 sudo apt-get update
-sudo apt-get install tmux-next=2.7~20180418~bzr4055+21-1ubuntu1~ppa0~ubuntu16.04.1 
+sudo apt-get install tmux-next - 2.7~20180510~bzr4064+21-1ubuntu1~ppa0~ubuntu16.04.1  
 sudo apt-get install curl
 sudo apt-get install vim-nox
 sudo apt-get install ctags
